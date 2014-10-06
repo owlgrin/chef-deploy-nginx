@@ -12,13 +12,13 @@ end
 
 phpapps = {
 	'api.horntell.com' => {
-		root => '/home/ubuntu/apps/api/public'
+		'root' => '/home/ubuntu/apps/api/public'
 	},
 	'core.horntell.com' => {
-		root => '/home/ubuntu/apps/core/public'
+		'root' => '/home/ubuntu/apps/core/public'
 	},
 	'mail.horntell.com' => {
-		root => '/home/ubuntu/apps/mail/public'
+		'root' => '/home/ubuntu/apps/mail/public'
 	}
 }
 
@@ -27,7 +27,7 @@ phpapps.each { |site, details|
 		source 'phpapp.erb'
 		variables({
 			:server_name => site,
-			:server_root => details[:root],
+			:server_root => details['root'],
 			:server_env => 'production'
 		})
 	end
