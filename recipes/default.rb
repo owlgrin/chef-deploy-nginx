@@ -32,3 +32,10 @@ phpapps.each { |site, details|
 		})
 	end
 }
+
+allsites = ['app.horntell.com', 'center.horntell.com', 'pipe.horntell.com', 'core.horntell.com', 'api.horntell.com', 'mail.horntell.com']
+allsites.each { |site|
+	execute "enabling site: #{site}" do
+		command "ngxen #{site}"
+	end
+}
