@@ -18,7 +18,7 @@ phpapps = {
 		'root' => '/home/ubuntu/apps/core/public'
 	},
 	'mail.horntell.com' => {
-		'root' => '/home/ubuntu/apps/mail/public'
+		'root' => '/home/ubuntu/apps/core/public'
 	}
 }
 
