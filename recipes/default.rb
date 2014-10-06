@@ -1,13 +1,13 @@
-file '/etc/nginx/sites-available/app.horntell.com' do
-	file 'app.horntell.com'
+cookbook_file '/etc/nginx/sites-available/app.horntell.com' do
+	name 'app.horntell.com'
 end
 
-file '/etc/nginx/sites-available/center.horntell.com' do
-	file 'center.horntell.com'
+cookbook_file '/etc/nginx/sites-available/center.horntell.com' do
+	name 'center.horntell.com'
 end
 
-file '/etc/nginx/sites-available/pipe.horntell.com' do
-	file 'pipe.horntell.com'
+cookbook_file '/etc/nginx/sites-available/pipe.horntell.com' do
+	name 'pipe.horntell.com'
 end
 
 phpapps = {
