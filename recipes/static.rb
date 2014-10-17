@@ -5,3 +5,10 @@ end
 cookbook_file 'center.horntell.com.conf' do
 	path '/etc/nginx/sites-available/center.horntell.com'
 end
+
+allsites = ['app.horntell.com', 'center.horntell.com']
+allsites.each { |site|
+	execute "enabling site: #{site}" do
+		command "ngxen #{site}"
+	end
+}
