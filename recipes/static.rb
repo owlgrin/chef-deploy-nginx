@@ -13,6 +13,6 @@ allsites.each { |site|
 	end
 }
 
-execute "restarting nginx service to reload new sites"
+execute "restarting nginx service to reload new static sites" do
 	command "service nginx restart"
 end
