@@ -31,3 +31,7 @@ allsites.each { |site|
 		command "ngxen #{site}"
 	end
 }
+
+execute "restarting nginx service to reload new sites"
+	command "service nginx restart"
+end
