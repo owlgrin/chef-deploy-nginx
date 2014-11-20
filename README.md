@@ -1,6 +1,6 @@
 # horntell-nginx-cookbook
 
-TODO: Enter the cookbook description here.
+Deploys Nginx Sites for Horntell
 
 ## Supported Platforms
 
