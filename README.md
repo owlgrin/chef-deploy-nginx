@@ -4,7 +4,7 @@ Deploys Nginx Sites for Horntell
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+Ubuntu.
 
 ## Attributes
 
