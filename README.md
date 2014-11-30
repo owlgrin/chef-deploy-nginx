@@ -39,4 +39,4 @@ Include `horntell-nginx` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: Mohit Mamoria (<YOUR_EMAIL>)
+Author:: Mohit Mamoria (mohit.mamoria@gmail.com)
