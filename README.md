@@ -37,6 +37,8 @@ Include `horntell-nginx` in your node's `run_list`:
 }
 ```
 
+Other recies included are `web` and `static`.
+
 ## License and Authors
 
 Author:: Mohit Mamoria (mohit.mamoria@gmail.com)
