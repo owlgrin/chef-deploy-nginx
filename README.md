@@ -4,7 +4,7 @@ Deploys Nginx Sites for Horntell
 
 ## Supported Platforms
 
-Ubuntu.
+Ubuntu 14.04.
 
 ## Attributes
 
