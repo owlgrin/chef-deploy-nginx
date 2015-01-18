@@ -20,7 +20,7 @@ phpapps.each { |site, details|
 		variables({
 			:server_name => site,
 			:server_root => details['root'],
-			:server_env => 'production'
+			:server_env => 'production' # this can be moved to environment variable
 		})
 	end
 }
