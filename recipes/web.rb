@@ -28,7 +28,7 @@ phpapps.each { |site, details|
 allsites = ['pipe.horntell.com', 'core.horntell.com', 'api.horntell.com', 'mail.horntell.com']
 allsites.each { |site|
 	execute "enabling site: #{site}" do
-		command "ngxen #{site}"
+		command "ngxen #{site}" # TODO: run this command only if site is not already enabled
 	end
 }
 
