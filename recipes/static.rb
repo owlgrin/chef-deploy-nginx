@@ -9,7 +9,7 @@ end
 allsites = ['app.horntell.com', 'center.horntell.com']
 allsites.each { |site|
 	execute "enabling site: #{site}" do
-		command "ngxen #{site}"
+		command "ngxen #{site}" # TODO: do not try to enable if already enabled
 	end
 }
 
