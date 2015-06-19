@@ -11,6 +11,9 @@ phpapps = {
 	},
 	'mail.horntell.com' => {
 		'root' => '/home/ubuntu/apps/core/public'
+	},
+	'me.horntell.com' => {
+		'root' => '/home/ubuntu/apps/core/public'
 	}
 }
 
@@ -25,7 +28,7 @@ phpapps.each { |site, details|
 	end
 }
 
-allsites = ['pipe.horntell.com', 'core.horntell.com', 'api.horntell.com', 'mail.horntell.com']
+allsites = ['pipe.horntell.com', 'core.horntell.com', 'api.horntell.com', 'mail.horntell.com', 'me.horntell.com']
 allsites.each { |site|
 	execute "enabling site: #{site}" do
 		command "ngxen #{site}" # TODO: run this command only if site is not already enabled
