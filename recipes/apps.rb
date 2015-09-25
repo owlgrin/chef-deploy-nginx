@@ -1,19 +1,6 @@
-cookbook_file 'pipe.horntell.com.conf' do
-	path '/etc/nginx/sites-available/pipe.horntell.com'
-end
-
 phpapps = {
-	'api.horntell.com' => {
-		'root' => '/home/ubuntu/apps/api/public'
-	},
-	'core.horntell.com' => {
-		'root' => '/home/ubuntu/apps/core/public'
-	},
-	'mail.horntell.com' => {
-		'root' => '/home/ubuntu/apps/core/public'
-	},
-	'me.horntell.com' => {
-		'root' => '/home/ubuntu/apps/core/public'
+	'apps.horntell.com' => {
+		'root' => '/home/ubuntu/apps/apps/public'
 	}
 }
 
@@ -28,7 +15,7 @@ phpapps.each { |site, details|
 	end
 }
 
-allsites = ['pipe.horntell.com', 'core.horntell.com', 'api.horntell.com', 'mail.horntell.com', 'me.horntell.com']
+allsites = ['apps.horntell.com']
 allsites.each { |site|
 	execute "enabling site: #{site}" do
 		command "ngxen #{site}" # TODO: run this command only if site is not already enabled
