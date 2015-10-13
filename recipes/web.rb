@@ -4,7 +4,7 @@ end
 
 phpapps = {
 	'api.horntell.com' => {
-		'root' => '/home/ubuntu/apps/api/public'
+		'root' => '/home/ubuntu/apps/core/public'
 	},
 	'core.horntell.com' => {
 		'root' => '/home/ubuntu/apps/core/public'
