@@ -7,6 +7,8 @@ server {
 	# Make site accessible from ...
 	server_name <%= @server_name %>;
 
+	client_max_body_size 5M;
+
 	access_log /var/log/nginx/<%= @server_name %>-access.log;
 	error_log  /var/log/nginx/<%= @server_name %>-error.log error;
 
