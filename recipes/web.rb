@@ -34,6 +34,7 @@ phpapps.each { |site, details|
 allsites = ['pipe.horntell.com', 'core.horntell.com', 'api.horntell.com', 'mail.horntell.com', 'admin.horntell.com', 'me.horntell.com']
 allsites.each { |site|
 	execute "enabling site: #{site}" do
+		not_if do ::File.exists?("/etc/nginx/sites-enabled/#{site}") end
 		command "ngxen #{site}" # TODO: run this command only if site is not already enabled
 	end
 }
